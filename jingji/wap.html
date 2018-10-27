@@ -161,7 +161,9 @@ document.getElementById('con_menu_1').style.display='block';
 function coni(){
 document.getElementById('con_menu_9').style.display='block';
 }
-
+function conj(){
+document.getElementById('con_menu_10').style.display='block';
+}
 
 
 </script> 
@@ -205,6 +207,9 @@ if(GetQueryString("f")==8){
 if(GetQueryString("f")==9){
 	document.write("<body onload='coni()'>");
 }
+if(GetQueryString("f")==10){
+	document.write("<body onload='conj()'>");
+}
 </script>
  <div class="header"><p>冬参佛法</p></div>
  <div id="nav">
@@ -219,8 +224,8 @@ if(GetQueryString("f")==9){
 	 <li id="menu8"><a href="wap.html?f=7&v=20099">本焕语录</li>
 	 <li id="menu7"><a href="wap.html?f=6&v=20000">善文</li>
 	 
-        
-	<li id="menu9" onclick="setTab('menu',9,9)"><a href="#">经阁</li>
+        <li id="menu10" onclick="setTab('menu',9,10)"><a href="#">经义</li>
+	<li id="menu9" onclick="setTab('menu',9,10)"><a href="#">经阁</li>
 	<li><a href="http://dongshenfofa.top/2">礼佛</li>
     </ul>
 	
@@ -382,7 +387,16 @@ goPage(1,25,7);
 goPage(1,25,8); 
 </script> 
 </div>
-</div>	  
+</div>
+<div id="con_menu_10" style="display:none">
+<div class="shipin">
+<ul>
+<li><a href='../foluen/文殊菩萨一百四十一愿.html' target='_blank'>文殊菩萨一百四十一愿</a></li>
+<li><a href='../foluen/十善戒.html' target='_blank'>十善戒</a></li>
+<li><a href='../foluen/过午不食，增加福报.html' target='_blank'>过午不食，增加福报</a></li>
+</ul>
+</div>
+</div>  
 <div id="con_menu_9" style="display:none">
 <center>
 <ul>
