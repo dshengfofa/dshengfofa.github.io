@@ -50,7 +50,7 @@ font-family:&#26999;&#20307;;
 padding:20px 5px 15px 20px;
 }
 
- #nav{
+ .nav{
      width:960px;
      margin:0 auto;
      margin-bottom:10px;
@@ -108,16 +108,16 @@ padding:20px 5px 15px 20px;
      margin-top:10px;
 	 opacity:0.9;
   }
-  #nav ul{
+  .nav ul{
       list-style:none;
      background:#C4E1FF;
      overflow:hidden;
   }
- #nav li{
+ .nav li{
      float:left;
 	 
  }
- #nav li a{
+.nav li a{
      display:block;
       color:black;
      width:100px;
@@ -128,7 +128,7 @@ padding:20px 5px 15px 20px;
 	 opacity:0.8;
   }
 
- #nav li a:hover{
+ .nav li a:hover{
 	 color:black;
       background:yellow;
 	opacity:0.8;
@@ -236,7 +236,11 @@ if(GetQueryString("u")==8){
 
 </script>
  <div class="header"><p>冬参佛法</p></div>
- <div id="nav">
+	  <div class="nav">
+<script src='../nav.js'></script>
+	
+ </div> 
+ <div class="nav">
 <ul>
          <li><a href="../index.html">首页</li>
          <li id="menu1" onclick="setTab('menu',1,8)"><a href="#">金刚经</a></li>
