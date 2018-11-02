@@ -48,7 +48,7 @@ font-family:&#26999;&#20307;;
 padding:20px 5px 15px 20px;
 }
 
- #nav{
+ .nav{
      width:960px;
      margin:0 auto;
      margin-bottom:10px;
@@ -125,7 +125,6 @@ padding:20px 5px 15px 20px;
  .nav li a:hover{
 	 color:black;
       background:yellow;
-	 font-size:20px; 
 	opacity:0.8;
  }
   a:hover{
@@ -240,14 +239,23 @@ if(GetQueryString("f")==9){
 if(GetQueryString("f")==10){
 	document.write("<body onload='conj()'>");
 }
+
+var requset =new XMLHttpRequest();
+        //請求目標地址
+         
+        //.........
+         
+        //判斷
+        if(requset.status == 404){
+           window.location.href="baidu.com";
+        }
 </script>
  <div class="header"><p>冬参佛法</p></div>
-	  <div class="nav">
+   <div class="nav">
 <script src='./nav.js'></script>
 	
- </div> 
+ </div>
  <div class="nav">
- 
 <ul>
          <li><a href="../../index.html">首页</li> 
 	 <li id="menu1"><a href="index.html?f=8&v=51000">佛学基础</li>
@@ -274,7 +282,7 @@ if(GetQueryString("f")==10){
 <div class="list_sp">
 				<ul id="idData_1">
 					        
-				 <center><script type="text/javascript" src="./2/wenku/rumen.js"></script></center>     
+				 <center><script type="text/javascript" src="rumen.js"></script></center>     
                  	       
 
   
@@ -292,7 +300,7 @@ goPage(1,150,1);
 <div class="shipin">
 <div class="list_sp">
 				<ul id="idData_2">
-				 <center><script type="text/javascript" src="./2/wenku/baiyu.js"></script></center>     
+				 <center><script type="text/javascript" src="baiyu.js"></script></center>     
                                  
 				  
 
@@ -314,7 +322,7 @@ goPage(1,150,2);
 <div class="list_sp">
 				<ul id="idData_3">
 					        
-				<center><script type="text/javascript" src="./2/wenku/wenku.js"></script></center>     
+				<center><script type="text/javascript" src="wenku.js"></script></center>     
                    
 
   
@@ -335,7 +343,7 @@ goPage(1,150,3);
 <div class="list_sp">
 				<ul id="idData_4">
 					        
-				<center><script type="text/javascript" src="./2/wenku/wenku2.js"></script></center>     
+				<center><script type="text/javascript" src="wenku2.js"></script></center>     
                    
 
   
@@ -356,7 +364,7 @@ goPage(1,150,4);
 <div class="list_sp">
 				<ul id="idData_5">
 					        
-				<center><script type="text/javascript" src="./2/wenku/cidian.js"></script></center>     
+				<center><script type="text/javascript" src="cidian.js"></script></center>     
                    
 
   
@@ -375,7 +383,7 @@ goPage(1,150,5);
 <div class="list_sp">
 				<ul id="idData_6">
 					        
-				<center><script type="text/javascript" src="./2/wenku/wenku3.js"></script></center>     
+				<center><script type="text/javascript" src="wenku3.js"></script></center>     
                    
 
   
@@ -397,7 +405,7 @@ goPage(1,150,6);
 <div class="list_sp">
 				<ul id="idData_7">
 					        
-				<center><script type="text/javascript" src="./2/wenku/wenku4.js"></script></center>     
+				<center><script type="text/javascript" src="wenku4.js"></script></center>     
                    
 
   
@@ -417,7 +425,7 @@ goPage(1,150,7);
 <div class="list_sp">
 				<ul id="idData_8">
 					        
-				<center><script type="text/javascript" src="./5/rumen3.js"></script></center>     
+				<center><script type="text/javascript" src="../../5/rumen3.js"></script></center>     
                    
 
   
@@ -435,7 +443,7 @@ goPage(1,150,8);
 <div class="list_sp">
 				<ul id="idData_9">
 					        
-			<center><script type="text/javascript" src="./2/wenku/shan.js"></script></center>     
+				<center><script type="text/javascript" src="shan.js"></script></center>     
                    
 
   
@@ -453,7 +461,7 @@ goPage(1,150,9);
 <div class="list_sp">
 				<ul id="idData_10">
 					        
-				<center><script type="text/javascript" src="./2/wenku/wenku5.js"></script></center>     
+				<center><script type="text/javascript" src="wenku5.js"></script></center>     
                    
 
   
