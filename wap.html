@@ -17,6 +17,7 @@
      background:#ECF5FF;
      margin-bottom:10px;
 	 opacity:0.9;
+	 border:1px solid #ECF5FF;
  }
 p {
     font-family:"&#26999;&#20307;";
@@ -37,11 +38,14 @@ p:hover {
 }
 
 
- #nav{
+ .nav{
      width:100%;
      margin:0 auto;
      margin-bottom:10px;
 	 opacity:0.9;
+	 overflow:hidden;
+	  background:#C4E1FF;
+	  border:1px solid #C4E1FF;
  }
  
  #main{
@@ -51,7 +55,7 @@ p:hover {
      margin:0 auto;
    overflow:auto;
      background:#ECF5FF;
-    
+    border:1px solid #ECF5FF;
 	 opacity:0.9;
   }
  
@@ -78,17 +82,20 @@ p:hover {
      margin:0 auto;
      margin-top:10px;
 	 opacity:0.9;
+	 border:1px solid #ECF5FF;
   }
-  #nav ul{
+  .nav ul{
       list-style:none;
      background:#C4E1FF;
-     overflow:hidden;
+  
+	 z-index:1;
   }
- #nav li{
+ .nav li{
      float:left;
 	 width:30%;
+	 overflow:hidden;
  }
- #nav li a{
+ .nav li a{
      display:block;
       color:black;
      
@@ -98,10 +105,10 @@ p:hover {
      text-align:center;
 	 opacity:0.8;
   }
- #nav .home{
+ .nav .home{
      width:100%;
  }
- #nav li a:hover{
+ .nav li a:hover{
 	 color:black;
       background:yellow;
 	opacity:0.8;
@@ -197,7 +204,23 @@ if(GetQueryString("f")==8){
 
 </script>
  <div class="header"><p>冬参佛法</p></div>
- <div id="nav">
+<div class="nav" id="nav">
+<ul>
+<li><a href="http://dongshenyun.github.io/wap.html">首页</a></li>
+<li><a href="http://dongshenyun.github.io/wap.html">视频</a></li>
+<li><a href="http://dongshenyun.github.io">经阁</a></li>
+<li><a href="http://dongshenyun.github.io/jiangzuo/wap.html">讲座</a></li>
+<li><a href="http://dongshenyun.github.io/jingji/wap.html?f=8&v=20001">语录</a></li>
+<li><a href="http://dongshenyun.github.io/2/wenku/wap.html?f=8&v=30000">文库</a></li>
+<li><a href="http://dongshenyun.github.io/3/wap.html?f=8">学佛</a></li>
+<li><a href="http://dongshenyun.github.io">菜单8</a></li>
+<li><a href="http://dongshenyun.github.io">菜单9</a></li>
+<li><a href="http://dongshenyun.github.io">菜单10</a></li>
+</ul>
+</div> 
+ <script src="scroll.js"></script>
+ 
+ <div class="nav">
 <ul>
          <li><a href="index.html">首页</li>
          <li id="menu1" onclick="setTab('menu',1,8)"><a href="#">&#35270;&#39057;1</a></li>
