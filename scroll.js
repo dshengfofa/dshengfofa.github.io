@@ -4,7 +4,7 @@
     }
     this.options = a || {};
     this.index = this.options.startSlide || 0;//开始的导航页的第几屏
-    this.speed = this.options.speed || 500;//速度
+    this.speed = this.options.speed || 300;//速度
 this.lwidth = this.options.width || 80;//导航li宽度
     this.delay = this.options.auto || 0;//自动滚动菜单速度0为不自动滚动
     this.container = b;//在那个容器内
@@ -177,4 +177,4 @@ Swipe.prototype = {
 //开始调用插件https://blog.csdn.net/zml_2622798617/article/details/54909920
 
 
-var slider=new Swipe(document.getElementById('nav2'),{speed:90,auto:0,width:71,col:2,});
+var slider=new Swipe(document.getElementById('nav2'),{speed:90,auto:0,width:71,col:4,});
