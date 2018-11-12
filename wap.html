@@ -203,23 +203,50 @@ if(GetQueryString("f")==8){
 }
 
 </script>
+ <script>
+(function() {
+	var baseFontSize=100;
+	var baseWidth=320;
+	var clientWidth=document.documentElement.clientWidth||window.innerWidth;
+	var innerWidth=Math.max(Math.min(clientWidth,480),320);
+	var rem=100;
+	if(innerWidth>362&&innerWidth<=375)
+	{rem=Math.floor(innerWidth/baseWidth*baseFontSize*0.9)
+	}
+	if(innerWidth>375){
+	rem=Math.floor(innerWidth/baseWidth*baseFontSize*0.84)
+	}
+	window.__baseREM=rem;document.querySelector("html").style.fontSize=rem+"px";
+	window.addEventListener("touchstart",function(){});
+}());
+
+
+
+</script>
+<link type="text/css" rel="stylesheet" href="style.css" />
  <div class="header"><p>冬参佛法</p></div>
-<div class="nav" id="nav2">
-<ul>
+<div class="box02">
+                		
+		<div class="box02_1">
+	<ul>
 <li><a href="http://dongshenfofa.top/wap.html">首页</a></li>
 <li><a href="http://dongshenfofa.top/wap.html">视频</a></li>
-<li id="menu8" onclick="setTab('menu',8,8)"><a href="#">经阁</li>
+<li id="menu8" onclick="setTab('menu',8,8)"><a href="#">经阁</a></li>
 <li><a href="http://dongshenfofa.top/jiangzuo/wap.html">讲座</a></li>
 <li><a href="http://dongshenfofa.top/jingji/wap.html?f=8&v=20001">语录</a></li>
 <li><a href="http://dongshenfofa.top/2/wenku/wap.html?f=8&v=30000">文库</a></li>
 <li><a href="http://dongshenfofa.top/3/wap.html?f=8">学佛</a></li>
-<li><a href="http://dongshenfofa.top">菜单</a></li>
-<li><a href="http://dongshenfofa.top">菜单</a></li>
-<li><a href="http://dongshenfofa.top">菜单</a></li>
+<li><a href="http://dongshenfofa.top" style='padding:0 .06rem;'>菜单</a></li>
+<li><a href="http://dongshenfofa.top" style='padding:0 .06rem;'>菜单</a></li>
+<li><a href="http://dongshenfofa.top" style='padding:0 .06rem;'>菜单</a></li>
 </ul>
-</div> 
+		</div>
+	</div>
 
- 
+
+	
+	
+	
  <div class="nav">
 <ul>
         
@@ -1353,7 +1380,7 @@ if(GetQueryString("f")==8){
 <center><div class="u"><a>&#22238;&#21521;:&#24895;&#27492;&#21151;&#24503;&#31181;&#21892;&#26681;&#65292;&#32047;&#19990;&#24616;&#20146;&#21516;&#27838;&#24681;&#12290;&#30001;&#27492;&#35299;&#33073;&#35832;&#33510;&#24700;&#65292;&#20849;&#35777;&#33769;&#25552;&#24230;&#26377;&#24773;!</a></div></center></div>
 <div>
 <script charset='uft-8' style='text/javascript' src='./search/search.js'></script>
-	 <script charset="utf-8" type="text/javascript" src="scroll.js"></script>
+		<script charset='uft-8' style='text/javascript' src="scroll2.js"></script>
 </div> 
 </body>
  </html>
