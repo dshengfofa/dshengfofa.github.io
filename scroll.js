@@ -177,4 +177,4 @@ Swipe.prototype = {
 //开始调用插件https://blog.csdn.net/zml_2622798617/article/details/54909920
 
 
-var slider=new Swipe(document.getElementById('nav'),{speed:90,auto:0,width:71,col:2,});
+var slider=new Swipe(document.getElementById('nav2'),{speed:90,auto:0,width:71,col:2,});
