@@ -28,8 +28,19 @@ document.write("</title>");
  </script>
 </head>
  <body>
- <div class="header"></div>
- <div class="nav">
+<script>
+	var system ={};  
+    var p = navigator.platform;       
+    system.win = p.indexOf("Win") == 0;  
+    system.mac = p.indexOf("Mac") == 0;  
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);     
+    if(system.win||system.mac||system.xll){//&#22914;&#26524;&#26159;&#30005;&#33041;&#36339;&#36716;&#21040;&#30334;&#24230;  
+        document.write("<div class='header'></div>");
+	    }else{  //&#22914;&#26524;&#26159;&#25163;&#26426;,&#36339;&#36716;&#21040;&#35895;&#27468;
+       document.write("<div class='header'><img style='margin-left:35%;width:30%; height:50px;' src='./3/images/titlewap.jpg'></div>");
+	    }
+		</script>
+ <div id="nav">
       <ul>
 	     <li><a href="index.html">首页</a></li>
          <li><a href="index.html">&#35270;&#39057;1</a></li>
